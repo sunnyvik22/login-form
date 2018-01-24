@@ -1,0 +1,198 @@
+* {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #ffffff;
+  font-family: 400 12px/1 'Poppins', sans-serif;
+  background-color: #2b333c;
+}
+
+a, a:hover {
+	text-decoration: none;
+	color: black;
+}
+img {
+  max-width: 100%;
+}
+input, button {
+  outline: none;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+label {
+  margin-bottom: 0;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f1 url("../img/bg-mob.jpg") 
+  no-repeat center / cover;
+  height: 100vh;
+  box-shadow: inset 100vw 0 0 rgba(0,0,0,0.2);
+  overflow-y: auto;
+  padding: 50px 0;
+ 
+}
+
+.logo {
+  margin-bottom: 45px;
+}
+
+
+.user-avtor-form {
+  max-width: 240px;
+  width: 100%;
+}
+
+.form-control {
+  border: 1px solid #49b871;
+  height: 50px;
+  width: 100%;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 20px;
+} 
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group:hover {
+  box-shadow: 0 3px 10px #49b871;
+  border-radius: 30px;
+  transition: all 0.3s linear;
+}
+
+
+.input-group label {
+	position: absolute;
+	left: 18px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 15px;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 17px;
+	text-transform: uppercase;
+	height: 50px;
+	font-weight: 500;
+	border-radius: 30px;
+	padding: 15px 50px;
+	transition: all 0.3s linear;
+	text-align: center;
+}
+
+.btn.full-width {
+	width: 100%;
+}
+
+.btn.btn-color {
+	color: #ffffff;
+	background-color: #36cb6c;
+}
+.btn.btn-color:hover {
+	box-shadow: 0 3px 10px #36cb6c;
+}
+
+.user-avtor-form form .btn {
+	margin-top: 50px;
+}
+
+
+.btn.btn-ic {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.btn.btn-ic .fa {
+    font-size: 15px;
+    margin-right: 13px;
+}
+
+.btn.btn-fb {
+	color: #ffffff;
+	background-color: #0076c8;
+	font-weight: 400;
+	padding: 15px 20px;
+}
+.btn.btn-fb:hover {
+	box-shadow: 0 3px 10px #0076c8;
+}
+
+.btn.btn-google {
+	color: #ffffff;
+	background-color: #dc4a38;
+	font-weight: 400;
+	padding: 15px 20px;
+}
+.btn.btn-google:hover {
+	box-shadow: 0 3px 10px #dc4a38;
+}
+.other-avtorization {
+	margin-top: 50px;
+}
+
+.other-avtorization .btn {
+	margin-bottom: 10px;
+}
+
+
+@media (min-width: 480px) {
+	.form-wrapper {
+	    background: #2b333c url("../img/login-bg-960x960.jpg") 
+	    no-repeat center / cover;
+        box-shadow: inset 100vw 0 0 rgba(0,0,0,0.75);
+   	}
+	.user-avtor-form {
+		max-width: 320px;
+	}
+
+}
+
+@media (min-width: 600px) {
+	.user-avtor-form {
+		max-width: 480px;
+	}
+
+}
+
+@media (min-width: 992px) {
+    .user-avtor-form  {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       max-width: 1000px;
+       width: 60vw;
+    }
+
+    .user-avtor-form form {
+       width: 50%;
+    }
+
+    .other-avtorization {
+    	width: 50%;
+    	margin-top: 0;
+    	margin-left: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+	.form-wrapper {
+		background: #2b333c url("../img/bg-desk.jpg") no-repeat 
+		center / cover ;
+	}
+}
